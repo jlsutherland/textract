@@ -28,7 +28,7 @@ class Parser(BaseParser):
         """
         if element.name in self._disallowed_names:
             return False
-        elif re.match(u'<!--.*-->', str(element.extract())):
+        elif re.match('<!--.*-->', str(element.extract())):
             return False
         return True
 
